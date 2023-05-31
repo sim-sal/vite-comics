@@ -1,16 +1,16 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './components/AppHeader.vue'
 
 export default (await import('vue')).defineComponent({
   components: {
-    HelloWorld
+    AppHeader
   }
 })
 
 </script>
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
+  <AppHeader />
 </template>
 
 <style lang="scss">
