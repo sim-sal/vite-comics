@@ -1,7 +1,8 @@
 // DISPLAY FLEX
-@mixin flex-between {
+@mixin flex-between-center {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 @mixin flex-around {
