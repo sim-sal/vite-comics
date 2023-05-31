@@ -102,6 +102,11 @@ export default (await import('vue')).defineComponent({
 
 #header_container {
     @include flex-between-center;
+    height: 100px;
+}
+
+#logo {
+    width: 70px
 }
 
 ul {
