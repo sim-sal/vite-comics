@@ -79,8 +79,8 @@ export default (await import('vue')).defineComponent({
 
                     <ul>
 
-                        <li v-for="link in links">
-                            <a :href="link.url">
+                        <li v-for="(link, i) in links" :key="i">
+                            <a :class="link.current ? 'active' : ''" :href="link.url">
                                 {{ link.text }}
                             </a>
                         </li>
@@ -121,6 +121,11 @@ ul {
             text-decoration: none;
             color: black;
             font-weight: bold;
+
+            &.active {
+                color: rgb(12, 124, 236);
+            }
+
         }
     }
 }
