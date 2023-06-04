@@ -305,6 +305,26 @@ ul {
 #down-footer {
     height: 100px;
     background-color: rgb(48, 48, 48);
+
+    .container {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #right-down-footer {
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+            color: rgb(12, 124, 236);
+
+            .icons {
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
 }
 
 #my-button {
@@ -316,25 +336,5 @@ ul {
     &:hover {
         cursor: pointer;
     }
-}
-
-#down-footer>div.container {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#right-down-footer {
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-    color: rgb(12, 124, 236);
-}
-
-.icons {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
 }
 </style>
