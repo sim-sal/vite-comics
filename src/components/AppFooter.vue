@@ -272,6 +272,8 @@ ul {
 #central-footer {
     height: 300px;
     background-image: url("../assets/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
 }
 
@@ -296,9 +298,12 @@ ul {
 }
 
 #img-central-footer {
-    width: 50%;
+    width: 40%;
     height: 300px;
     background-image: url('../assets/img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 // regole parte inferiore
@@ -335,6 +340,7 @@ ul {
 
     &:hover {
         cursor: pointer;
+        background-color: rgb(78, 78, 78);
     }
 }
 </style>
